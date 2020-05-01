@@ -1,0 +1,49 @@
+{
+  "name": "bastion",
+  "version": "8.0.0-alpha",
+  "description": "Give awesome perks to your Discord server!",
+  "homepage": "https://bastion.traction.one",
+  "main": "./index.js",
+  "repository": "https://github.com/TheBastionBot/Bastion.git",
+  "author": "Sankarsan Kampa",
+  "authorURL": "https://traction.one",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "transpile": "./node_modules/.bin/tsc",
+    "start": "node .",
+    "lint": "./node_modules/.bin/eslint . --ext .ts",
+    "test": "yarn transpile"
+  },
+  "devDependencies": {
+    "@types/discord-rpc": "^3.0.2",
+    "@types/mathjs": "^6.0.5",
+    "@types/mongoose": "^5.7.6",
+    "@types/node": "^13.9.0",
+    "@types/yargs-parser": "^15.0.0",
+    "@types/youtube-dl": "^1.12.2",
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.1",
+    "erlpack": "discordapp/erlpack",
+    "sodium": "^3.0.2",
+    "utf-8-validate": "^5.0.2",
+    "zlib-sync": "^0.1.6"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.2.1",
+    "@types/node-fetch": "^2.5.5",
+    "@types/uuid": "^7.0.2",
+    "chalk": "^4.0.0",
+    "discord-rpc": "^3.1.0",
+    "mathjs": "^6.6.4",
+    "node-fetch": "^2.6.0",
+    "tesseract": "https://github.com/TheBastionBot/Tesseract",
+    "uuid": "^7.0.3",
+    "youtube-dl": "^3.0.2"
+  }
+}
